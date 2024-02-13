@@ -1,0 +1,301 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+.container1{
+    width: 100%;
+    height: 120vh;
+    background-image: url("Assets/IN-en-20240122-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: max(1200px, 120vw);
+    background-position: center center;
+}
+
+.container1 .box{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.logo img{
+    width: 180px;
+    height: 50px;
+}
+.english{
+    border: 1px solid white;
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+.signin{
+    border: 1px solid white;
+    height: 30px;
+    width: 75px;
+    border-radius: 5px;
+    background: rgba(255, 0, 0,1.7);
+    cursor: pointer;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+    opacity: 1;
+}
+.buttons{
+    display: flex;
+    gap: 22px;
+}
+.login h1,h3,h4{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    height: calc(100% - 62px);
+    justify-content: center;
+    grid-row-gap: 0px;
+    margin-top: -30px;
+    padding-left: 127px;
+    text-align: center;
+}
+.login h4{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: center;
+}
+.logbutton{
+    background-color: red;
+    color: white;
+    font-style: inherit;
+    font-variant: inherit;
+    font-stretch: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-optical-sizing: inherit;
+    font-kerning: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    width: 206px;
+    height: 55px;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 7px;
+    border: none;
+}
+.logbutton:hover{
+    background-color: rgba(255, 0, 0, 0.763);
+}
+.portal{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.portal input{
+    width: 300px;
+    height: 50px;
+    background: none;
+    border: 1px solid white;
+    color: rgb(255,255,255);
+    border-radius: 5px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.container2{
+    background-color: black;
+    width: 100%;
+    height: 76vh;
+    border: 1px solid;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    /* border: 1px solid white; */
+    width: 45%;
+    margin: 10px;
+    height: 65vh;
+    color: white;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.card h4{
+    font-size: 25px;
+    transform: translateY(-120px);
+}
+.card1{
+    margin-left: 118px;
+    margin-top: 120px;
+}
+.card2 img{
+    position: absolute;
+    width: 451px;
+    height: 451px;
+    object-fit: cover;
+    mix-blend-mode: normal;
+}
+.card2 video{
+    mix-blend-mode: normal;/*to fit the video we use this*/
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+    transform: translateY(-5px);/*upar thodi jagah reh rhi thi toh ye use kiya*/
+}
+.container3{
+    background-color: black;
+    width: 100%;
+    height: 76vh;
+    border: 1px solid;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateX(80px);
+    background-image: url("Assets/mobile-0819.jpg");
+    background-position: center center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+.download{
+    width: 300px;
+    height: 80px;
+    border: 2px solid gray;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.338);
+    background-color: black;
+    transform: translateY(-30px);
+    border-radius: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px;
+    gap: 15px;
+}
+.download span p{
+    transform: translateY(-15px);
+    color: blue;
+}
+.st{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.gif{
+    height: 60px;
+    width: 60px;
+}
+.card4{
+    font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 40px;
+    gap: 50px;
+}
+.container4{
+    background-color: black;
+    width: 100%;
+    height: 76vh;
+    border: 1px solid;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card5{
+    transform: translateX(100px);
+}
+.card6{
+    display: flex;
+}
+.card6 img {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    object-fit: contain; /* You can use "cover" here if you want the video to cover the entire image */
+    mix-blend-mode: normal;
+}
+
+.card6 video {
+    position: absolute;
+    width: 250px; /* Adjust the width and height to your needs */
+    height: 150px;
+    object-fit: cover; /* You can use "cover" here as well */
+    mix-blend-mode: normal;
+    transform: translateY(-50px);
+}
+.container5{
+    background-color: black;
+    width: 100%;
+    height: 76vh;
+    border: 1px solid;
+    margin-top: 10px;
+    font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    color: white;
+}
+.card7{
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    gap: 30px;
+}
+.card8{
+    width: 40%;
+    height: 100%;
+    font-size: 35px;
+    font-weight: 1000;
+    font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.card8 h2{
+    transform: translateY(30px);
+}
+.card7 img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    /* Tablet styles */
+    .container1 {
+        height: 100vh;
+        background-size: cover;
+    }
+}
+
